@@ -16,7 +16,7 @@
         <div class="mt-8">{{ (count / timer || 0).toFixed(4) }} кликов в секунду</div>
       </div>
       <button
-        class="mt-12 h-76 w-76 rounded-2 bg-dark text-center text-4xl font-bold color-white shadow-xl transition sm:w-100 active:opacity-90"
+        class="mt-12 h-76 w-76 rounded-2 bg-dark text-center text-4xl font-bold color-white shadow-xl transition sm:h-100 sm:w-100 active:opacity-90"
         @click.stop.prevent="clickHandler"
         @click.middle.stop.prevent="clickHandler"
         @click.right.stop.prevent="clickHandler"
