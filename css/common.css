@@ -1,0 +1,227 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+html,
+body {
+  min-width: 320px;
+  height: 100%;
+}
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+  cursor: default;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Inter", serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/bg.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.main__title {
+  color: #fff;
+  font-family: "Belanosima", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main__text {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 25px;
+}
+.main-soc {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.main-soc__item {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 15px 10px 0 10px;
+  -webkit-transition: .35s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: .35s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: .35s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: .35s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: .35s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.main-soc__item:hover {
+  background-color: #fff;
+}
+.main-soc__item_vk {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version=%221.2%22 baseProfile=%22tiny%22 id=%22&%23x421;&%23x43B;&%23x43E;&%23x439;_1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 99 99%22 preserveAspectRatio=%22none%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd%7D%3C/style%3E%3C/defs%3E%3Cpath class=%22cls-1%22 d=%22M76.9 35.7c-.7-.5-3.4-.5-6-.5-2.7.1-5.4.1-6 .3-.6.2-1.9 3.3-3.5 6.6-1.9 3.6-4.3 7.1-5.7 7.1-1.9 0-1.5-5.9-1.3-10.4 0-2.9-.4-3.8-.9-4.1-1-.7-3.8-1.4-3.8-1.4s-8.4-.6-9.6 3c1.6.2 4.4-.3 3.3 10.9-.1.5-1.3 5.2-5.2-1.1-1-1.6-4.7-10.9-6-11-4.3-.1-8.6-.3-10.1.5-1.4.8 1.9 7.2 7.4 15.8C34 58.5 38.7 64 46.9 65.3c1.6.2 5.6.3 6.9-.3.8-.4-.2-6.5 2.7-7.1 1.3-.2 6.3 6.4 8.2 7.1 1.2.5 3.7.7 6.3.5 2.8-.1 6 .3 6.3-1.6.7-4.2-8.5-9.7-8.7-12.3-.2-1.9 3.3-5.3 5.2-7.9 2-2.9 4.5-6.8 3.1-8z%22/%3E%3C/svg%3E");
+}
+.main-soc__item_vk:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version=%221.2%22 baseProfile=%22tiny%22 id=%22&%23x421;&%23x43B;&%23x43E;&%23x439;_1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 99 99%22 preserveAspectRatio=%22none%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%234a76a8;fill-rule:evenodd%7D%3C/style%3E%3C/defs%3E%3Cpath class=%22cls-1%22 d=%22M76.9 35.7c-.7-.5-3.4-.5-6-.5-2.7.1-5.4.1-6 .3-.6.2-1.9 3.3-3.5 6.6-1.9 3.6-4.3 7.1-5.7 7.1-1.9 0-1.5-5.9-1.3-10.4 0-2.9-.4-3.8-.9-4.1-1-.7-3.8-1.4-3.8-1.4s-8.4-.6-9.6 3c1.6.2 4.4-.3 3.3 10.9-.1.5-1.3 5.2-5.2-1.1-1-1.6-4.7-10.9-6-11-4.3-.1-8.6-.3-10.1.5-1.4.8 1.9 7.2 7.4 15.8C34 58.5 38.7 64 46.9 65.3c1.6.2 5.6.3 6.9-.3.8-.4-.2-6.5 2.7-7.1 1.3-.2 6.3 6.4 8.2 7.1 1.2.5 3.7.7 6.3.5 2.8-.1 6 .3 6.3-1.6.7-4.2-8.5-9.7-8.7-12.3-.2-1.9 3.3-5.3 5.2-7.9 2-2.9 4.5-6.8 3.1-8z%22/%3E%3C/svg%3E");
+}
+.main-soc__item_telegram {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version=%221.2%22 baseProfile=%22tiny%22 id=%22&%23x421;&%23x43B;&%23x43E;&%23x439;_1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 99 99%22 preserveAspectRatio=%22none%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd%7D%3C/style%3E%3C/defs%3E%3Cpath class=%22cls-1%22 d=%22M70.2 28.5L24.1 46c-2.5.7-2.4 3.2-.6 3.8l11.6 3.6L39.5 67c.5 1.5 1 2 1.9 2.1 1 0 1.3-.3 2.3-1.2 1.2-1.1 3-2.8 5.8-5.6l12 8.9c2.2 1.2 3.8.6 4.4-2.1l7.5-37.3c.9-3.3-1-4.2-3.2-3.3zM36.9 52.6l26.3-16.5c1.3-.9 1.7.1 1.1.8L42.5 56.5l-1.1 9.8-4.5-13.7z%22/%3E%3C/svg%3E");
+}
+.main-soc__item_telegram:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version=%221.2%22 baseProfile=%22tiny%22 id=%22&%23x421;&%23x43B;&%23x43E;&%23x439;_1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 99 99%22 preserveAspectRatio=%22none%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23179cde;fill-rule:evenodd%7D%3C/style%3E%3C/defs%3E%3Cpath class=%22cls-1%22 d=%22M70.2 28.5L24.1 46c-2.5.7-2.4 3.2-.6 3.8l11.6 3.6L39.5 67c.5 1.5 1 2 1.9 2.1 1 0 1.3-.3 2.3-1.2 1.2-1.1 3-2.8 5.8-5.6l12 8.9c2.2 1.2 3.8.6 4.4-2.1l7.5-37.3c.9-3.3-1-4.2-3.2-3.3zM36.9 52.6l26.3-16.5c1.3-.9 1.7.1 1.1.8L42.5 56.5l-1.1 9.8-4.5-13.7z%22/%3E%3C/svg%3E");
+}
+.main-soc__item_whatsapp {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version=%221.2%22 baseProfile=%22tiny%22 id=%22&%23x421;&%23x43B;&%23x43E;&%23x439;_1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 99 99%22 preserveAspectRatio=%22none%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;fill-rule:evenodd%7D%3C/style%3E%3C/defs%3E%3Cpath class=%22cls-1%22 d=%22M74.8 48.3c-.4-13.3-11.3-24-24.8-24-13.3 0-24.2 10.4-24.8 23.5-.1.3-.1.7-.1 1.1 0 4.6 1.3 9 3.6 12.7l-4.5 13.2L38 70.4c3.6 1.9 7.7 3 12 3 13.7 0 24.8-11 24.8-24.6v-.5zm-13.5 5.6c-.6-.3-3.6-1.8-4.1-2-.6-.2-1-.3-1.4.3-.4.6-1.6 1.9-1.9 2.3-.4.4-.7.5-1.3.2-.7-.3-2.6-.9-4.9-3-1.8-1.6-3.1-3.6-3.4-4.1-.3-.7-.1-.9.2-1.3.3-.2.6-.7.9-1 .1-.1.2-.2.2-.3.2-.2.2-.4.4-.7.2-.4.1-.8-.1-1-.1-.3-1.3-3.3-1.9-4.5-.5-1.2-1-1-1.3-1-.4 0-.8-.1-1.2-.1-.4 0-1.1.1-1.6.8-.6.6-2.2 2-2.2 5 0 .7.1 1.4.4 2 .6 2.2 1.9 3.9 2.1 4.2.3.4 4.2 6.7 10.4 9.1 6.2 2.4 6.2 1.6 7.3 1.5 1.1-.1 3.6-1.4 4.1-2.9.5-1.4.5-2.6.3-2.9 0-.2-.4-.4-1-.6zM50 69.6c-4.2 0-8.2-1.3-11.5-3.4l-8 2.5 2.6-7.7c-2.5-3.4-4-7.6-4-12.1 0-.7 0-1.3.1-2 1-10.5 10-18.7 20.8-18.7 11 0 20 8.4 20.8 19.1.1.5.1 1.1.1 1.6-.1 11.4-9.4 20.7-20.9 20.7z%22/%3E%3C/svg%3E");
+}
+.main-soc__item_whatsapp:hover {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg version=%221.2%22 baseProfile=%22tiny%22 id=%22&%23x421;&%23x43B;&%23x43E;&%23x439;_1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 99 99%22 preserveAspectRatio=%22none%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%231ebea5;fill-rule:evenodd%7D%3C/style%3E%3C/defs%3E%3Cpath class=%22cls-1%22 d=%22M74.8 48.3c-.4-13.3-11.3-24-24.8-24-13.3 0-24.2 10.4-24.8 23.5-.1.3-.1.7-.1 1.1 0 4.6 1.3 9 3.6 12.7l-4.5 13.2L38 70.4c3.6 1.9 7.7 3 12 3 13.7 0 24.8-11 24.8-24.6v-.5zm-13.5 5.6c-.6-.3-3.6-1.8-4.1-2-.6-.2-1-.3-1.4.3-.4.6-1.6 1.9-1.9 2.3-.4.4-.7.5-1.3.2-.7-.3-2.6-.9-4.9-3-1.8-1.6-3.1-3.6-3.4-4.1-.3-.7-.1-.9.2-1.3.3-.2.6-.7.9-1 .1-.1.2-.2.2-.3.2-.2.2-.4.4-.7.2-.4.1-.8-.1-1-.1-.3-1.3-3.3-1.9-4.5-.5-1.2-1-1-1.3-1-.4 0-.8-.1-1.2-.1-.4 0-1.1.1-1.6.8-.6.6-2.2 2-2.2 5 0 .7.1 1.4.4 2 .6 2.2 1.9 3.9 2.1 4.2.3.4 4.2 6.7 10.4 9.1 6.2 2.4 6.2 1.6 7.3 1.5 1.1-.1 3.6-1.4 4.1-2.9.5-1.4.5-2.6.3-2.9 0-.2-.4-.4-1-.6zM50 69.6c-4.2 0-8.2-1.3-11.5-3.4l-8 2.5 2.6-7.7c-2.5-3.4-4-7.6-4-12.1 0-.7 0-1.3.1-2 1-10.5 10-18.7 20.8-18.7 11 0 20 8.4 20.8 19.1.1.5.1 1.1.1 1.6-.1 11.4-9.4 20.7-20.9 20.7z%22/%3E%3C/svg%3E");
+}
+@media (max-width: 800px) {
+  .main__title {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .main__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .main__title {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .main-soc__item {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .main__title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .main__title {
+    font-size: 42px;
+    line-height: 62px;
+  }
+  .main__text {
+    font-size: 16px;
+  }
+}

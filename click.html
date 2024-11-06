@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Checker</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
+</head>
+<body>
+  <div id="app">
+    <div class="h-screen w-screen flex flex-col items-center justify-center">
+      <div class="text-2xl sm:text-3xl">
+        <span>{{ timer.toFixed(4) }} секунд</span>
+        <span class="mx-4 sm:mx-8">|</span>
+        <span>{{ count }} кликов</span>
+        <div class="mt-8">{{ (count / timer || 0).toFixed(4) }} кликов в секунду</div>
+      </div>
+      <button
+        class="mt-12 h-76 w-76 rounded-2 bg-dark text-center text-4xl font-bold color-white shadow-xl transition sm:h-100 sm:w-100 active:opacity-90"
+        @click.stop.prevent="clickHandler"
+        @click.middle.stop.prevent="clickHandler"
+        @click.right.stop.prevent="clickHandler"
+      >
+        Click
+      </button>
+
+      <button class="mt-14 text-xl color-red" @click="resetHandler">Reset</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+
+  <script type="module">
+    import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js'
+
+    createApp({
+      setup() {
+        const count = ref(0);
+        const timer = ref(0);
+        let startTime = 0;
+
+        const resetHandler = () => {
+          count.value = 0;
+          timer.value = 0;
+          startTime = 0;
+        };
+
+        const clickHandler = (event) => {
+          if (startTime) {
+            const diffTime = (event.timeStamp - startTime) / 1000;
+            if (diffTime > 30) return;
+
+            timer.value = diffTime;
+            count.value++;
+          } else {
+            startTime = event.timeStamp;
+          }
+        };
+
+        return {
+          count,
+          timer,
+          resetHandler,
+          clickHandler,
+        };
+      },
+    }).mount('#app')
+  </script>
+</body>
+</html>
